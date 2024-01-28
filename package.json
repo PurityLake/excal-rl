@@ -1,0 +1,20 @@
+{
+  "name": "excal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve ./index.html",
+    "build": "parcel build ./index.html --dist-dir ./dist --public-url ./",
+    "test": "npm run build && ex-test -d ./dist -t ./test/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "excalibur": "^0.28.7",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
